@@ -29,7 +29,8 @@ DEBUG = True
 ALLOWED_HOSTS = [
     '192.168.43.230',
     '127.0.0.1',
-    '0.0.0.0'
+    '0.0.0.0',
+    'sensaj.herokuapp.com'
 ]
 
 
