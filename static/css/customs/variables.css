@@ -1,0 +1,22 @@
+@import url("fonts.css");
+:root {
+  /* Theme Colors*/
+  --primary-color: #3E54D3;
+  --accent-color: #15CDCA;
+  --secondary-color: #4F80E2;
+  --third-color: #4FE0B6;
+  --dark-blue: #00003f;
+  --bg-color: #0f0f0f;
+  --gray-color: #b3b3b3;
+  --white: #ffffff;
+  --midnight: #104f55;
+  --waterlight: #bfd0da;
+  --shinylight: #eeeeee;
+  /* gradient Colors*/
+  --amphibian: linear-gradient(120deg, #00003f, #3E54D3 25%, #4F80E2 50%, #104f55 100%);
+  --jackDorsey: linear-gradient(315deg, #0cbaba 0%, #3E54D3 74%);
+  --flaudulent: linear-gradient(315deg, #7f5a83 0%, #0d324d 74%);
+  --new-leaf: linear-gradient(360deg, #00537E 10%, #3AA17E 360%);
+  /* Theme Font Family*/
+  --dosis: "dosis", cursive;
+}

@@ -1,0 +1,39 @@
+/* body, .navbar {
+  background: var(--new-leaf) !important;
+} */
+
+.class-details i {
+  color: var(--accent-color);
+}
+
+.class-details h5, .table-tittle, .section-header {
+  /* color: #ffffff; */
+  font-weight: bold;
+}
+
+/* .class-details h6 {
+  color: #ffffff;
+} */
+
+table {
+  /* background: var(--amphibian) !important; */
+  border-radius: .3rem;
+}
+
+.personal-info .title {
+  font-weight: bold;
+  padding: .2rem;
+}
+
+.personal-info .subtitle {
+  padding: .2rem;
+}
+
+/* table tr th, table tr td {
+  color: #ffffff;
+} */
+
+/* .card ul li, .card {
+  background: var(--jackDorsey) !important;
+  color: var(--waterlight);
+} */

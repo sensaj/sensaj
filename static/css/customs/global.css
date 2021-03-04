@@ -1,0 +1,88 @@
+@import 'variables.css';
+body {
+  font-family: var(--dosis);
+  overflow-x: hidden;
+}
+
+.navbar {
+  background: var(--jackDorsey);
+}
+
+a, a:hover {
+  text-decoration: none;
+}
+.section-heading {
+  /* padding: 3rem 0; */
+  font-size: 3rem;
+}
+
+.custom-btn {
+  padding: .5rem;
+  text-align: center;
+  color: black;
+}
+
+.custom-primary {
+  border: 2px solid var(--primary-color);
+  border-radius: .3rem;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.custom-primary:hover {
+  color: #ffffff;
+  background: var(--primary-color);
+  border: none;
+}
+
+.custom-secondary {
+  border: 2px solid var(--accent-color);
+  border-radius: .3rem;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.custom-secondary:hover {
+  color: #ffffff;
+  background: var(--accent-color);
+  border: none;
+}
+
+.footer {
+  background: var(--new-leaf);
+  color: #ffffff;
+}
+
+.footer a {
+  color: #ffffff;
+}
+
+table tr:hover td i {
+  transition: transform .8s ease-in-out;
+  -webkit-transition: -webkit-transform .8s ease-in-out;
+  -webkit-transform: rotate(360deg);
+  transform: rotate(360deg) scale(1.5);
+}
+
+.trust-blue-gradient {
+  background: -webkit-linear-gradient(360deg, #38aecc 10%, #347fb9 360%);
+  /* Chrome 10+, Saf5.1+ */
+  background: -moz-linear-gradient(360deg, #38aecc 10%, #347fb9 360%);
+  /* FF3.6+ */
+  background: linear-gradient(360deg, #38aecc 10%, #347fb9 360%);
+  /* W3C */
+}
+
+.new-leaf-gradient {
+  background: -webkit-linear-gradient(360deg, #00537E 10%, #3AA17E 360%);
+  background: linear-gradient(360deg, #00537E 10%, #3AA17E 360%);
+}
+
+.epic-bluegreen-gradient {
+  background: -webkit-linear-gradient(360deg, #01a99c 10%, #0698b1 360%);
+  /* Chrome 10+, Saf5.1+ */
+  background: -moz-linear-gradient(360deg, #01a99c 10%, #0698b1 360%);
+  /* FF3.6+ */
+  background: linear-gradient(360deg, #01a99c 10%, #0698b1 360%);
+  /* W3C */
+}

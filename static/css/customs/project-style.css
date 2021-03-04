@@ -1,0 +1,52 @@
+.projectIcon img {
+  animation: infiniteRotation 10s infinite alternate;
+}
+
+@keyframes infiniteRotation {
+  0% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+body {
+  overflow-x: hidden;
+}
+
+/*----------screenshots Carousel---------*/
+
+section .screenshots {
+  background: url('../../images/Abract01.png');
+  background-repeat: no-repeat;
+  background-position: right;
+  height: 100vh;
+  background-size: 65%;
+}
+
+section .screenshots-post .screenshots-content {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  box-shadow: 0 15px 20px rgba(0, 0, 0, 0.2);
+  border-radius: .5rem;
+}
+
+section .screenshots-post .screenshots-content img {
+  border-radius: .5rem;
+  max-height: 60vh;
+}
+
+section .container .owl-nav {
+  position: absolute;
+  top: 0%;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.owl-nav .owl-prev .owl-nav-prev, .owl-nav .owl-next .owl-nav-next {
+  font-size: 1.3rem;
+}
+
+/*-------X--screenshots Carousel----X----*/

@@ -1,0 +1,363 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Bootstrap libraries-->
+    <link rel="stylesheet" href="{% static 'css/frameworks/bootstrap/bootstrap.css'%}">
+    <!--Fontawesome libraries-->
+    <link rel="stylesheet" href="{% static 'css/frameworks/fontawesome/all.css'%}">
+    <!--Animate Css-->
+    <link rel="stylesheet" href="{% static 'css/node_modules/animate.css/animate.css'%}">
+    <!--AOS Library-->
+    <link rel="stylesheet" href="{% static 'css/node_modules/aos/dist/aos.css'%}">
+    <!--Custom Css-->
+    <link rel="stylesheet" href="{% static 'css/customs/global.css'%}">
+    <link rel="stylesheet" href="{% static 'css/customs/profile-style.css'%}">
+    {% if whichPage == 'myCV' %}
+    <title>Curicullum Vitae</title>
+    {% else %}
+    <title>Courses Studied</title>
+    {% endif %}
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+      <a class="navbar-brand" href="#">
+        <img src="{% static 'images/IMG_5429.jpg' %}" class="rounded-circle" width="30" height="30"
+          alt="Profile picture">
+      </a>
+      <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
+          <a class="nav-item nav-link" href="#">Features</a>
+          <a class="nav-item nav-link" href="#">Pricing</a>
+          <a class="nav-item nav-link disabled" href="#">Disabled</a>
+        </div>
+      </div> -->
+    </nav>
+    {% if whichPage == 'myCV'%}
+    <div class="container myCV justify-content-center pl-4 mt-5 mb-5 pt-3 col-md-8">
+      <h2 class="section-header text-center">Curriculum Vitae</h2>
+      <div class="personal-info">
+        <div class="row">
+          <h3 class="section-header">1.Personal Informations</h3>
+        </div>
+        <div class="row">
+          <span class="title">Name:</span>
+          <span class="subtitle">Jafar Salum Ali</span>
+        </div>
+        <div class="row">
+          <span class="title">Date of Birth:</span>
+          <span class="subtitle">03, March, 1998</span>
+        </div>
+        <div class="row">
+          <span class="title">Marital Status:</span>
+          <span class="subtitle">Single</span>
+        </div>
+        <div class="row">
+          <span class="title">Nationality:</span>
+          <span class="subtitle">Tanzania</span>
+        </div>
+        <div class="row">
+          <span class="title">Phone Number:</span>
+          <span class="subtitle">+255 766 094 682/+255 676 296 753</span>
+        </div>
+        <div class="row">
+          <span class="title">email:</span>
+          <span class="subtitle">jafarsalum07@gmail.com</span>
+        </div>
+      </div>
+      <div class="row profile-summary mt-5">
+        <h3 class="section-header">2.Profile Summary</h3>
+        <p>
+          A young Computer Developer with passion in innovation and invention.
+          He beleives in Technology as a means of national success towards the struggle for
+          economic development and rise of people standards of life.He believes that the Technological changes
+          is not only government task but it is for all, that is every one has to play role making sure there
+          is advancement of technology by adopting to new good technology and encouraging others to adopt also
+          provide necessary reviews on the technology.
+        </p>
+      </div>
+
+      <div class="row mt-5 qualifications">
+        <h2 class="table-tittle">3.Academic Qualifications</h2>
+        <div class="table-responsive">
+          <table class="table table-hover">
+            <thead>
+              <tr>
+                <th>Instution</th>
+                <th>Education Level</th>
+                <th>Period</th>
+                <th>Award</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Mbezi Beach Primary School</td>
+                <td>Primary level</td>
+                <td>2005 - 2011</td>
+                <td>Primary School Education Certificate</td>
+              </tr>
+              <tr>
+                <td>Chem-bande Secondary School</td>
+                <td>Ordinary level</td>
+                <td>2012 - 2015</td>
+                <td>Certificate of secondary Education Examination</td>
+              </tr>
+              <tr>
+                <td>Moshi Technical High School</td>
+                <td>Advanced level</td>
+                <td>2016 - 2018</td>
+                <td>Advanced Certificate of Secondary Education Examination</td>
+              </tr>
+              <tr>
+                <td>Institute of Finance Management</td>
+                <td>Bachelor Degree</td>
+                <td>2018 - now</td>
+                <td></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="row  mt-5">
+        <div class="otherQuality">
+          <h3 class="section-header">4.Other Qualifications</h3>
+          <div class="card" style="width: 18rem;">
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">Certified for training at AMCET hub(2018)</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="projectsDone ml-sm-2">
+          <h3 class="section-header">5.Projects Done</h3>
+          <div class="card" style="width: 18rem;">
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">
+                <h4>Droopy App</h4>
+                <span>Was both Backend and Frontend devloper</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="otherSkills ml-sm-2">
+          <h3 class="section-header">6.Other Skills</h3>
+          <div class="card" style="width: 18rem;">
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">Football</li>
+              <!-- <li class="list-group-item">Football</li> -->
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="row mt-5">
+
+        <div class="languageProfs mr-sm-5">
+          <h3 class="section-header">7.Language Profiency</h3>
+          <div class="card" style="width: 18rem;">
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">English(not good in Speaking but in writting)</li>
+              <li class="list-group-item">Kiswahili(Speaking & writting)</li>
+            </ul>
+          </div>
+        </div>
+        <div class="hobbies ml-sm-5">
+          <h3 class="section-header">8.Hobbies and Interests</h3>
+          <div class="card" style="width: 18rem;">
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">Progamming</li>
+              <li class="list-group-item">Socializing with people</li>
+              <li class="list-group-item">Watching and Playing Football</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="referees  mt-5">
+        <h3 class="section-header">9.Referees</h3>
+        Other information with some recommendations may be sought freely from:
+        <div class="row mt-2">
+          <div class="card col-md-4 mr-1 mt-3 mt-sm-0" style="width: 18rem;">
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">
+                <h4>
+                  Haji Mrisho
+                </h4>
+                <span>Chairman - Pamoja Foundation</span><br>
+                <span>Dar es salaam</span><br>
+                <span>hrubibi@gmail.com</span><br>
+                <span>+255 713 731 300 </span>
+              </li>
+            </ul>
+          </div>
+          <div class="card col-md-4 ml-1 mt-3 mt-sm-0" style="width: 18rem;">
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">
+                <h4>
+                  Habibu Mrisho
+                </h4>
+                <span>Hub Manager - AMCET hub</span><br>
+                <span>Dar es salaam</span><br>
+                <span>mrishohabibu13@gmail.com</span><br>
+                <span>+255 769 926 355/+255 652 861 044</span>
+              </li>
+            </ul>
+          </div>
+          <div class="card col-md-4 mt-3" style="width: 18rem;">
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">
+                <h4>Abdallah Msuni </h4>
+                <span>Mentor and supervisor – AMCET hub</span><br>
+                <span>Dar es salaam</span><br>
+                <span>aboudmsuni@gmail.com</span><br>
+                <span>+255 625 510 161</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+    {%else %}
+    <div class="container  mt-5 pt-3 mb-5 ml-2">
+      <div class="class-details">
+        <h5><i class="fas fa-university"></i> University:</h5>
+        <h6>Institute of Finance Management</h6>
+        <h5><i class="fas fa-book-reader"></i> Course:</h5>
+        <h6>Bachelor of Science in Information Technology</h6>
+        <h5><i class="fas fa-calendar"></i> Year:</h5>
+        <h6>November, 2018 - July, 2021</h6>
+      </div>
+      <div class="row mt-5">
+        <h2 class="table-tittle">First Year</h2>
+        <div class="table-responsive">
+          <table class="table table-hover">
+            <thead>
+              <tr>
+                <th>First Semister</th>
+                <th>Second Semister</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Progamming In C I</td>
+                <td>Progamming in C II</td>
+              </tr>
+              <tr>
+                <td>Fundamentals of Computer</td>
+                <td>Fundamentals of Data Communication</td>
+              </tr>
+              <tr>
+                <td>System Analysis And Design I</td>
+                <td>System Analysis And Design II</td>
+              </tr>
+              <tr>
+                <td>Mathematics I</td>
+                <td>Fundamentals of Database Management</td>
+              </tr>
+              <tr>
+                <td>Development Studies</td>
+                <td>Operating systems I</td>
+              </tr>
+              <tr>
+                <td>Communication Skills</td>
+                <td>Fundamentals of Web Design</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="row mt-3">
+        <h2 class="table-tittle">Second Year</h2>
+        <div class="table-responsive">
+          <table class="table table-hover">
+            <thead>
+              <tr>
+                <th>First Semister</th>
+                <th>Second Semister</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Visual programming</td>
+                <td>Human Computer Interface</td>
+              </tr>
+              <tr>
+                <td>Management Information System</td>
+                <td>Electronic Commerce</td>
+              </tr>
+              <tr>
+                <td>Multimedia</td>
+                <td>Computer Systems Security</td>
+              </tr>
+              <tr>
+                <td>Operating Systems II</td>
+                <td>Software Engineering</td>
+              </tr>
+              <tr>
+                <td>Database Management System</td>
+                <td>Object Oriented Programming</td>
+              </tr>
+              <tr>
+                <td>Internet and Web Technology</td>
+                <td>Computer Networks</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="row mt-3">
+        <h2 class="table-tittle">Third Year</h2>
+        <div class="table-responsive">
+          <table class="table table-hover">
+            <thead>
+              <tr>
+                <th>First Semister</th>
+                <th>Second Semister</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Computer systems Management I</td>
+                <td>Computer systems Management II</td>
+              </tr>
+              <tr>
+                <td>IS Strategy Formulation</td>
+                <td>ICT Policy Formulation</td>
+              </tr>
+              <tr>
+                <td>IS Research methods</td>
+                <td>Management of Technology & Innovation</td>
+              </tr>
+              <tr>
+                <td>E-Government</td>
+                <td>ICT Entrepreneurship</td>
+              </tr>
+              <tr>
+                <td>Supply Chain Management Systems</td>
+                <td>Network Security</td>
+              </tr>
+              <tr>
+                <td>Web Database Applications</td>
+                <td>Final Year Project</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+    </div>
+    {% endif %}
+  </body>
+
+</html>
