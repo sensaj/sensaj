@@ -50,3 +50,74 @@ section .container .owl-nav {
 }
 
 /*-------X--screenshots Carousel----X----*/
+
+/*------------Comment Form---------------*/
+
+.form-section {
+  background: -webkit-linear-gradient(left, #0072ff, #00c6ff);
+  margin-top: 1rem;
+}
+
+.comment-form {
+  background: #fff;
+  margin-top: 1rem;
+  /* margin-bottom: 5%; */
+  /* width: 70%; */
+}
+
+.comment-form .form-control {
+  border-radius: .3rem;
+}
+
+.contact-image {
+  text-align: center;
+}
+
+.contact-image img {
+  border-radius: 1rem;
+  width: 11%;
+  margin-top: -3%;
+  transform: rotate(29deg);
+}
+
+.comment-form form {
+  padding: 14%;
+}
+
+.comment-form form .row {
+  margin-bottom: -7%;
+}
+
+.comment-form .title {
+  margin-bottom: 8%;
+  margin-top: -10%;
+  text-align: center;
+  color: #0072ff;
+}
+
+.comment-form .title h3 {
+  font-weight: bold;
+}
+
+.comment-form .btnContact {
+  width: 50%;
+  border: none;
+  border-radius: .5rem;
+  padding: 1.5%;
+  background: #ffff;
+  font-weight: 600;
+  color: #0062cc;
+  cursor: pointer;
+}
+
+.btnContactSubmit {
+  width: 50%;
+  border-radius: 1rem;
+  padding: 1.5%;
+  color: #fff;
+  background-color: #000;
+  border: none;
+  cursor: pointer;
+}
+
+/*-------X--Comment Form----X----*/

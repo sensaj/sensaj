@@ -11,9 +11,15 @@ body {
 a, a:hover {
   text-decoration: none;
 }
+
 .section-heading {
   /* padding: 3rem 0; */
   font-size: 3rem;
+}
+
+p {
+  word-wrap: break-word;
+  white-space: initial;
 }
 
 .custom-btn {

@@ -53,6 +53,8 @@ class Reviews(models.Model):
     project = models.ForeignKey(
         Project, on_delete=models.CASCADE)
     date = models.DateField()
+    fullName = models.CharField(max_length=100, default="")
+    sendNotification = models.BooleanField(default=False)
 
 
 class EducationLevel(models.Model):
