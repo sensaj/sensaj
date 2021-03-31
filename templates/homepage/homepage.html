@@ -139,46 +139,48 @@
 
     {% endfor %}
     {% else %}
-    {% for project in projects %}
+    <div class="row">
+      {% for project in projects %}
 
-    <div class="col-md-2 col-9 project-item animate__animated animate__fadeInUp">
-      <div class="front justify-content-center">
-        <div class="project-image">
-          <img src="{{project.projectIcon.url}}" alt="{{project.projectName}} Image">
-        </div>
-        <h3 class="project-title text-center">{{project.projectName}}</h3>
-        <!-- <p class="project-description text-center">{{project.projectDescription}}</p> -->
-        <div class="row justify-content-center">
-          <a href="#" class="project-type col-7">
-            {{project.projectType.typeName}}
-          </a>
-        </div>
-        <div class="row justify-content-center">
-          <div class="likes col-5">
-            0 <i class="fas fa-thumbs-up"></i>
+      <div class="col-md-2 col-9 project-item animate__animated animate__fadeInUp">
+        <div class="front justify-content-center">
+          <div class="project-image">
+            <img src="{{project.projectIcon.url}}" alt="{{project.projectName}} Image">
           </div>
-          <div class="reviews col-5">
-            0 <i class="fab fa-facebook-messenger"></i>
+          <h3 class="project-title text-center">{{project.projectName}}</h3>
+          <!-- <p class="project-description text-center">{{project.projectDescription}}</p> -->
+          <div class="row justify-content-center">
+            <a href="#" class="project-type col-7">
+              {{project.projectType.typeName}}
+            </a>
+          </div>
+          <div class="row justify-content-center">
+            <div class="likes col-5">
+              0 <i class="fas fa-thumbs-up"></i>
+            </div>
+            <div class="reviews col-5">
+              0 <i class="fab fa-facebook-messenger"></i>
+            </div>
+          </div>
+          <div class="ml-5 d-block d-sm-none d-md-none d-lg-none">
+            <a href="{% url 'viewProject' project.id%}"
+              class="btn btn-success animate__animated animate__zoomIn animate__slow 	2s">
+              View Project
+            </a>
           </div>
         </div>
-        <div class="ml-5 d-block d-sm-none d-md-none d-lg-none">
-          <a href="{% url 'viewProject' project.id%}"
-            class="btn btn-success animate__animated animate__zoomIn animate__slow 	2s">
-            View Project
-          </a>
+        <div class="back">
+          <div class="button-div d-none d-sm-block d-md-block d-lg-block">
+            <span>Do you want to know more about this project?</span>
+            <a href="{% url 'viewProject' project.id%}"
+              class="btn btn-success animate__animated animate__zoomIn animate__slow 	2s">
+              View Project
+            </a>
+          </div>
         </div>
       </div>
-      <div class="back">
-        <div class="button-div d-none d-sm-block d-md-block d-lg-block">
-          <span>Do you want to know more about this project?</span>
-          <a href="{% url 'viewProject' project.id%}"
-            class="btn btn-success animate__animated animate__zoomIn animate__slow 	2s">
-            View Project
-          </a>
-        </div>
-      </div>
+      {% endfor %}
     </div>
-    {% endfor %}
     {% endif %}
   </div>
   <div class="skills mt-5">
