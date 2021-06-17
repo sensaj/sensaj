@@ -58,7 +58,7 @@
                 {% endfor %}
               </div>
             </div>
-            <div class="description col-md-4 border p-3">
+            <div class="description col-md-4 border p-3  mb-5">
               <p>{{project.projectDescription}}</p>
               <a href="{{project.projectLink}}" target="_blank" class="btn btn-primary">
                 {% if project.projectType.typeName == "Mobile App" %}
@@ -71,7 +71,7 @@
           </div>
           <!-- </section> -->
         </section>
-        <!-- <br><br><br><br><br> -->
+        <br><br><br><br><br>
         <section class="reviews mt-5 pt-5 container">
           {% for review in reviews %}
           <div class="border pl-5 pt-3 pb-3 pr-3 mb-3 rounded">

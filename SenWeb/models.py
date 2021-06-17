@@ -7,21 +7,21 @@ class ProjectType(models.Model):
     typeName = models.CharField(max_length=20)
 
     def __str__(self):
-        return str(self.id)
+        return str(self.typeName)
 
 
 class ProjectDevelopment(models.Model):
     status = models.CharField(max_length=30)
 
     def __str__(self):
-        return str(self.id)
+        return str(self.status)
 
 
 class ProjectBusiness(models.Model):
     status = models.CharField(max_length=30)
 
     def __str__(self):
-        return str(self.id)
+        return str(self.status)
 
 
 class Project(models.Model):
@@ -38,7 +38,7 @@ class Project(models.Model):
     coverImage = models.ImageField(upload_to='projectCover')
 
     def __str__(self):
-        return str(self.id)
+        return str(self.projectName)
 
 
 class Screenshots(models.Model):
@@ -61,14 +61,14 @@ class EducationLevel(models.Model):
     levelName = models.CharField(max_length=100)
 
     def __str__(self):
-        return str(self.id)
+        return str(self.levelName)
 
 
 class Position(models.Model):
     positionName = models.CharField(max_length=100)
 
     def __str__(self):
-        return str(self.id)
+        return str(self.positionName)
 
 
 class Members(models.Model):

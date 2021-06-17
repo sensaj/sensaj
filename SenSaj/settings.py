@@ -82,18 +82,19 @@ WSGI_APPLICATION = 'SenSaj.wsgi.application'
 
 DATABASES = {
 
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
-    }
-
     # 'default': {
-    #     'ENGINE': 'django.db.backends.postgresql_psycopg2',
-    #     'NAME': 'sensaj',
-    #     'USER': 'postgres',
-    #     'PASSWORD': 'sen07Saj',
-    #     'HOST': 'localhost'
+    #     'ENGINE': 'django.db.backends.sqlite3',
+    #     'NAME': BASE_DIR / 'db.sqlite3',
     # }
+
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'dcbs95h8pgegoj',
+        'HOST': 'ec2-3-224-251-47.compute-1.amazonaws.com',
+        'PORT': 5432,
+        'USER': 'ojfegsxqcqofhl',
+        'PASSWORD': '52f46c6a0f4ac55623918d21f928390a0969f2891be53af0654138e769b11466'
+    }
 }
 
 
