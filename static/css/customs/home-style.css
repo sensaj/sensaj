@@ -149,10 +149,10 @@
   padding: 1rem 0 .5rem;
   border-top: 2px solid var(--gray-color);
 }
-
+/* 
 .skills .profile-pic img {
-  transform: rotateY(180deg);
-}
+  transform: rotateX(180deg) rotateY(90deg);
+} */
 
 .skills .profile-pic .title {
   font-weight: bold;
@@ -196,14 +196,17 @@
   .carousel-inner .carousel-item img {
     height: 50vh;
   }
+
   .carousel-caption {
     top: 50%;
     transform: translateY(-50%);
     bottom: initial;
   }
+
   .carousel-caption h1 {
     font-size: 1.5rem;
   }
+
   .carousel-caption p {
     font-size: 1rem;
   }
@@ -217,30 +220,38 @@
   .carousel-inner .carousel-item img {
     height: 70vh;
   }
+
   .carousel-caption {
     top: 50%;
     transform: translateY(-50%);
     bottom: initial;
   }
+
   .carousel-caption h1 {
     font-size: 1.5rem;
   }
+
   .carousel-caption p {
     font-size: 1rem;
   }
+
   .projects .project-item:hover .front {
     transform: rotateX(-180deg);
     /* background: floralwhite; */
   }
+
   .projects .project-item .back {
     visibility: visible;
   }
+
   .projects .project-item:hover .back {
     transform: rotateX(0deg);
   }
+
   .projects {
     min-height: 70vh;
   }
+
   .projects .project-item {
     min-height: 55vh;
   }
@@ -252,33 +263,42 @@
   .carousel-inner .carousel-item img {
     height: 50vh;
   }
+
   .carousel-caption {
     top: 50%;
     transform: translateY(-50%);
     bottom: initial;
   }
+
   .carousel-caption h1 {
     font-size: 1.5rem;
   }
+
   .carousel-caption p {
     font-size: 1rem;
   }
+
   .projects {
     min-height: 70vh;
   }
+
   .projects .project-item {
     min-height: 55vh;
   }
+
   .projects .project-item .front {
     position: unset;
     transform: rotateX(0deg);
   }
+
   .projects .project-item:hover .front {
     transform: rotateX(0deg);
   }
+
   .projects .project-item .back {
     visibility: hidden;
   }
+
   .skills {
     margin-top: 25rem;
   }
